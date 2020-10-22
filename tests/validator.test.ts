@@ -7,7 +7,7 @@ describe('validate', function() {
     expect(result).equal(true);
   }); 
 
-  it('should determine if canvasDataMock is real canvas data', function() {
+  it('should return true if input is a valid canvas data', function() {
     let canvasDataMock = {
       id : "userId",
       color : "#ffafff",
@@ -21,7 +21,7 @@ describe('validate', function() {
   }); 
 
   
-  it('should determine if canvasDataMock is not proper canvas data', function() {
+  it('should return false if input is not a valid canvas data', function() {
     let canvasDataMock = {
       id : "userId",
       color : "#ffaa8",

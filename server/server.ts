@@ -61,6 +61,6 @@ io.on('connection', (socket) => {
 });
 
 const server = http.listen(app.get("port"), function() {
-  console.log("listening on *:3000");
+  console.log("listening on port:" + app.get("port"));
 });
 
