@@ -13,6 +13,4 @@ RUN npm run build
 
 EXPOSE 3000
 
-WORKDIR /usr/src/app/dist
-
-CMD [ "node", "server.js" ]
+CMD [ "node", "dist/server.js" ]
